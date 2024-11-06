@@ -2,13 +2,13 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
 
 # Telegram bot tokeni va kanallaringiz ID'lari
-TOKEN = "7558431780:AAGquk2sUn7Mnp7317-rpgj1wpPdiCilNSw"  # O'zingizning tokeningizni o'rnating
-PUBLIC_CHANNEL_ID = "-1002097136466"       # Umumiy kanal ID'si
-PRIVATE_CHANNEL_ID = "-1001588823732"      # Maxfiy kanal ID'si
+TOKEN = ""  # O'zingizning tokeningizni o'rnating
+PUBLIC_CHANNEL_ID = "-"       # Umumiy kanal ID'si
+PRIVATE_CHANNEL_ID = "-"      # Maxfiy kanal ID'si
 
 # /start komandasi uchun funksiya
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
-    await update.message.reply_text("Salom! \n Siz anonim xabar yozishingiz mumkin. \n Xabaringiz Xusenovaytadi kanalda anonim tarzda chop etiladi.")
+    await update.message.reply_text("Salom! \n Siz anonim xabar yozishingiz mumkin. \n Xabaringiz  kanalda anonim tarzda chop etiladi.")
 
 # Foydalanuvchidan kelgan xabarni qabul qilish uchun funksiya
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
